@@ -36,9 +36,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4103471096996286}
   - component: {fileID: 212595876219561930}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: PlayerWeapon_2_WoodSpoon
-  m_TagString: Untagged
+  m_TagString: WoodenSpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1367597872612444
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,9 +401,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4565152717280518}
   - component: {fileID: 61304030810274972}
+  - component: {fileID: 114674634251188112}
   m_Layer: 11
   m_Name: WoodenSpoon_Hitbox
-  m_TagString: Untagged
+  m_TagString: WoodenSpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1126,10 +1127,10 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1790879346019308}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.016853712}
@@ -1395,6 +1396,8 @@ MonoBehaviour:
   meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
   meatballLauncher: {fileID: 1950279656228346}
   meatballShootTimer: 0
+  attackBoxWoodenSpoon: {fileID: 0}
+  woodenSpoonTimer: 0
 --- !u!114 &114295777137466502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1449,8 +1452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   upSpeed: 5
-  gravityUp: 10
-  gravityDown: 12
+  gravityUp: 20
+  gravityDown: 24
   jumpVelocity: 7.5
   downVelocityMax: 10
   breadcrumbs: 0
@@ -1526,6 +1529,8 @@ MonoBehaviour:
   meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
   meatballLauncher: {fileID: 1950279656228346}
   meatballShootTimer: 0
+  attackBoxWoodenSpoon: {fileID: 0}
+  woodenSpoonTimer: 0
 --- !u!114 &114546188093667768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1589,6 +1594,26 @@ MonoBehaviour:
   m_Length: 0.27999982
   m_ChildTransform: {fileID: 4044338459489314}
   m_AttachedIK: {fileID: 114870986159689636}
+--- !u!114 &114674634251188112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790879346019308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570f5f662995f7940b84cc550f28e9d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyBossScript: {fileID: 0}
+  spitball: {fileID: 1233503291799848, guid: ef4771196121ad94b84b443e99b776d7, type: 2}
+  straw: {fileID: 1415181504442998}
+  spitballShootTimer: 0
+  meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
+  meatballLauncher: {fileID: 1950279656228346}
+  meatballShootTimer: 0
+  attackBoxWoodenSpoon: {fileID: 61304030810274972}
+  woodenSpoonTimer: 0
 --- !u!114 &114697419238242314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1607,6 +1632,8 @@ MonoBehaviour:
   meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
   meatballLauncher: {fileID: 1950279656228346}
   meatballShootTimer: 0
+  attackBoxWoodenSpoon: {fileID: 61304030810274972}
+  woodenSpoonTimer: 0
 --- !u!114 &114740513830372848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1655,6 +1682,8 @@ MonoBehaviour:
   meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
   meatballLauncher: {fileID: 1950279656228346}
   meatballShootTimer: 0
+  attackBoxWoodenSpoon: {fileID: 0}
+  woodenSpoonTimer: 0
 --- !u!114 &114771857363862896
 MonoBehaviour:
   m_ObjectHideFlags: 1

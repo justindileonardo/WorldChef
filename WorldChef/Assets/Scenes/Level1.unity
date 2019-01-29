@@ -723,36 +723,6 @@ Transform:
   m_Father: {fileID: 1670189061}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &214629660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1790879346019308, guid: ef641953338964e4e859019826f661c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1259736165}
---- !u!61 &214629662 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 61304030810274972, guid: ef641953338964e4e859019826f661c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1259736165}
---- !u!114 &214629663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 214629660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 570f5f662995f7940b84cc550f28e9d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyBossScript: {fileID: 1259935063}
-  spitball: {fileID: 1233503291799848, guid: ef4771196121ad94b84b443e99b776d7, type: 2}
-  straw: {fileID: 437010135}
-  spitballShootTimer: 0
-  meatball: {fileID: 1559576580789414, guid: b2ccc17c7d3b44bf2ae5111773e2af30, type: 2}
-  meatballLauncher: {fileID: 1113771468}
-  meatballShootTimer: 0
-  attackBoxWoodenSpoon: {fileID: 214629662}
-  woodenSpoonTimer: 0
 --- !u!1 &224465556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,11 +1243,6 @@ Transform:
   m_Father: {fileID: 1670189061}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &437010135 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1415181504442998, guid: ef641953338964e4e859019826f661c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1259736165}
 --- !u!1 &517171176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2453,11 +2418,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1113771468 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1950279656228346, guid: ef641953338964e4e859019826f661c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1259736165}
 --- !u!1 &1115831314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,12 +2770,37 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 137111932183447674, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 114220917726291518, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 137545734222629756, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 137062307397635750, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137876961376848962, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114480009985733848, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 114767314668280066, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 137413189308578412, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137709450715565770, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
@@ -2825,41 +2810,16 @@ Prefab:
       propertyPath: EnemyBossScript
       value: 
       objectReference: {fileID: 1259935063}
-    - target: {fileID: 137709450715565770, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137062307397635750, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 137413189308578412, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137111932183447674, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114767314668280066, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
-    - target: {fileID: 114480009985733848, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
-    - target: {fileID: 137876961376848962, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 137545734222629756, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114220917726291518, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
     - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: camera
@@ -2890,40 +2850,20 @@ Prefab:
       propertyPath: progressBarSlider
       value: 
       objectReference: {fileID: 1728138112}
-    - target: {fileID: 1114806547401538, guid: ef641953338964e4e859019826f661c5, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1114806547401538, guid: ef641953338964e4e859019826f661c5, type: 2}
-      propertyPath: m_TagString
-      value: WoodenSpoon
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790879346019308, guid: ef641953338964e4e859019826f661c5, type: 2}
-      propertyPath: m_TagString
-      value: WoodenSpoon
-      objectReference: {fileID: 0}
-    - target: {fileID: 1282119438666988, guid: ef641953338964e4e859019826f661c5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61304030810274972, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 114674634251188112, guid: ef641953338964e4e859019826f661c5,
         type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790879346019308, guid: ef641953338964e4e859019826f661c5, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114697419238242314, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: attackBoxWoodenSpoon
+      propertyPath: EnemyBossScript
       value: 
-      objectReference: {fileID: 214629662}
-    - target: {fileID: 61304030810274972, guid: ef641953338964e4e859019826f661c5,
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: jumpVelocity
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: gravityDown
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef641953338964e4e859019826f661c5, type: 2}
