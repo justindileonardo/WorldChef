@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour {
         HP = 10;
 		rb = GetComponent<Rigidbody2D> ();
         healingAuto = false;
-        progressBarSlider.value = 0;
+        //progressBarSlider.value = 0;
         canWalk = true;
 	}
 
@@ -96,8 +96,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         }
 
-        //attack cooldown
-        attackCD += Time.deltaTime;
+        
 
         //animation states
         if(targetMoveSpeed != 0 && isWalking == false && canWalk == true)
@@ -110,11 +109,7 @@ public class PlayerMovement : MonoBehaviour {
             playerAnimator.SetBool("isWalking", false);
             isWalking = false;
         }
-        if(Input.GetMouseButtonDown(0) && attackCD > 1.5)
-        {
-            //attack
-            PlayAttackAnimation();
-        }
+        
         
         //checks for being grounded
         //https://www.youtube.com/watch?v=MFM_-wlwRag
@@ -175,6 +170,20 @@ public class PlayerMovement : MonoBehaviour {
         enemyBasicTimer += Time.deltaTime;
 
 	}
+
+    void FixedUpdate()
+    {
+
+        //attack cooldown
+        attackCD += Time.deltaTime;
+
+        if (Input.GetMouseButtonDown(0) && attackCD > 1.0f)
+        {
+            //attack
+            PlayAttackAnimation();
+        }
+    }
+
     public void PlayAttackAnimation()
     {
         StartCoroutine(AttackAnimation());

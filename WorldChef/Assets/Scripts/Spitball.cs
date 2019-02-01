@@ -44,7 +44,7 @@ public class Spitball : MonoBehaviour {
     {
         if (other.gameObject.tag == "EnemyBasic")
         {
-            EnemyBasic enemyBasicScript = other.gameObject.GetComponent<EnemyBasic>();
+            EnemyBread enemyBasicScript = other.gameObject.GetComponent<EnemyBread>();
             enemyBasicScript.HP -= .5f;
             Destroy(gameObject);
         }

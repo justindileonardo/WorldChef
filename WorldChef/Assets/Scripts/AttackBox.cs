@@ -48,22 +48,35 @@ public class AttackBox : MonoBehaviour {
 
         }
 
+        
+
+    }
+
+    void FixedUpdate()
+    {
         //new attacking
         woodenSpoonTimer += Time.deltaTime;
-        if(woodenSpoonTimer > .5f)
+        if (woodenSpoonTimer >= .15f && woodenSpoonTimer <= .5f)
+        {
+            attackBoxWoodenSpoon.enabled = true;
+        }
+        /*if(woodenSpoonTimer > .5f)
+        {
+            attackBoxWoodenSpoon.enabled = false;
+        } */
+        else
         {
             attackBoxWoodenSpoon.enabled = false;
         }
 
-        if(Input.GetMouseButtonDown(0) && woodenSpoonTimer > 1.5f)
+        if (Input.GetMouseButtonDown(0) && woodenSpoonTimer > 1.0f)
         {
-            if(WeaponManager.w2 == true)
+            if (WeaponManager.w2 == true)
             {
                 woodenSpoonTimer = 0;
-                attackBoxWoodenSpoon.enabled = true;
+                //attackBoxWoodenSpoon.enabled = true;
             }
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -72,7 +85,7 @@ public class AttackBox : MonoBehaviour {
         {
             if (other.gameObject.tag == "EnemyBasic")
             {
-                EnemyBasic enemyBasicScript = other.gameObject.GetComponent<EnemyBasic>();
+                EnemyBread enemyBasicScript = other.gameObject.GetComponent<EnemyBread>();
 
                 if (WeaponManager.w1 == true)
                 {

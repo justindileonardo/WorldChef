@@ -2770,37 +2770,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114220917726291518, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 114674634251188112, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: EnemyBossScript
       value: 
       objectReference: {fileID: 1259935063}
-    - target: {fileID: 137545734222629756, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137111932183447674, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 137876961376848962, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114480009985733848, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
-    - target: {fileID: 114767314668280066, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
-    - target: {fileID: 137413189308578412, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 137709450715565770, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137062307397635750, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
@@ -2810,16 +2790,41 @@ Prefab:
       propertyPath: EnemyBossScript
       value: 
       objectReference: {fileID: 1259935063}
-    - target: {fileID: 137062307397635750, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137709450715565770, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 137111932183447674, guid: ef641953338964e4e859019826f661c5,
+    - target: {fileID: 137413189308578412, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114767314668280066, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 114480009985733848, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
+    - target: {fileID: 137876961376848962, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 137545734222629756, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114220917726291518, guid: ef641953338964e4e859019826f661c5,
+        type: 2}
+      propertyPath: EnemyBossScript
+      value: 
+      objectReference: {fileID: 1259935063}
     - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
         type: 2}
       propertyPath: camera
@@ -2850,21 +2855,6 @@ Prefab:
       propertyPath: progressBarSlider
       value: 
       objectReference: {fileID: 1728138112}
-    - target: {fileID: 114674634251188112, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: EnemyBossScript
-      value: 
-      objectReference: {fileID: 1259935063}
-    - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: jumpVelocity
-      value: 8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114328613242397302, guid: ef641953338964e4e859019826f661c5,
-        type: 2}
-      propertyPath: gravityDown
-      value: 26
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef641953338964e4e859019826f661c5, type: 2}
   m_IsPrefabAsset: 0
