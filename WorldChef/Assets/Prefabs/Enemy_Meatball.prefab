@@ -188,6 +188,7 @@ MonoBehaviour:
   activatingTrigger: {fileID: 61673368414604438}
   explosionRadius: 4
   ExplosionAnimation: {fileID: 1812579693032442}
+  breadcrumb: {fileID: 1801766311484974, guid: b23b432ae58c5314c945da0132660f7b, type: 2}
 --- !u!212 &212234926594835586
 SpriteRenderer:
   m_ObjectHideFlags: 1

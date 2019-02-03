@@ -30,7 +30,7 @@ public class EnemyBread : MonoBehaviour {
         if(HP <= 0)
         {
             Destroy(gameObject);
-            Instantiate(breadcrumb, transform.position, Quaternion.identity);
+            Instantiate(breadcrumb, new Vector3(transform.position.x + Random.Range(-.37f, .37f), transform.position.y + Random.Range(0, 1f), transform.position.z), Quaternion.identity);
         }
         if (attackTimer >= 0.5f)
         {
@@ -68,7 +68,7 @@ public class EnemyBread : MonoBehaviour {
         {
             if(attackTimer >= 1)
             {
-                PlayerMovement.HP -= 1.0f;
+                PlayerMovement.HP -= 0.5f;
                 attackTimer = 0;
                 if(PlayerMovement.direction == 1)
                 {

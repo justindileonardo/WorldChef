@@ -15,10 +15,15 @@ public class EnemyMeatball : MonoBehaviour {
 
     public GameObject ExplosionAnimation;
 
+    public GameObject breadcrumb;
+
+    public static float HP;
+
 	// Use this for initialization
 	void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        HP = 5;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +34,15 @@ public class EnemyMeatball : MonoBehaviour {
 
     void FixedUpdate()
     {
+
+        if(HP <= 0)
+        {
+            Destroy(gameObject);
+            Instantiate(breadcrumb, new Vector3(transform.position.x + Random.Range(-.37f, .37f), transform.position.y + Random.Range(0, 1f), transform.position.z), Quaternion.identity);
+            Instantiate(breadcrumb, new Vector3(transform.position.x + Random.Range(-.37f, .37f), transform.position.y + Random.Range(0, 1f), transform.position.z), Quaternion.identity);
+            Instantiate(breadcrumb, new Vector3(transform.position.x + Random.Range(-.37f, .37f), transform.position.y + Random.Range(0, 1f), transform.position.z), Quaternion.identity);
+        }
+
         //if player triggers meatball range, make active = count timer down to explosion
         if(isActive == true)
         {
@@ -60,6 +74,7 @@ public class EnemyMeatball : MonoBehaviour {
         if (explosionRadius >= Vector3.Distance(transform.position, player.transform.position))
         {
             print("hit player");
+            PlayerMovement.HP -= 4f;
         }
         else
         {
@@ -75,6 +90,7 @@ public class EnemyMeatball : MonoBehaviour {
         yield return new WaitForSeconds(0.75f);
         ExplosionAnimation.SetActive(false);
         Destroy(gameObject);
+        Instantiate(breadcrumb, new Vector3(transform.position.x + Random.Range(-.37f, .37f), transform.position.y + Random.Range(0, 1f), transform.position.z), Quaternion.identity);
     }
 
     void OnTriggerEnter2D(Collider2D other)
